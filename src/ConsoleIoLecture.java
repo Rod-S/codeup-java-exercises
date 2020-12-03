@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class ConsoleIoLecture{
     public static void main(String[] args) {
@@ -5,21 +6,21 @@ public class ConsoleIoLecture{
                     print() and println()
          ****************************************/
 
-// >> this:
+//// >> this:
 //        System.out.println("here");
 //        System.out.println("there");
-
-// >> is equivalent to this:
+//
+//// >> is equivalent to this:
 //        System.out.print("here2\n");
 //        System.out.print("there2\n");
-
-
-// >> without the newline characters, print outputs this:
+//
+//
+//// >> without the newline characters, print outputs this:
 //        System.out.print("here");
 //        System.out.print("there");
-
-
-// >> to concatenate, just like JS:
+//
+//
+//// >> to concatenate, just like JS:
 //        System.out.println("Hello" + " " + "World");
 
 
@@ -29,8 +30,12 @@ public class ConsoleIoLecture{
 
         //TODO TOGETHER: Print a formatted string using the following... printf(formatString, data)
 
+//        System.out.printf("Hello%n");
+//        System.out.printf("World");
 
+        String name = "Vivian";
 
+        System.out.printf("Hello %S%n", name);
 
         //TODO TOGETHER:
         // (1) Create a string variable
@@ -39,10 +44,12 @@ public class ConsoleIoLecture{
 
 
         // TODO: print using printf() with placeholder %S
-
+        //results in capital letters
 
 
         //TODO: Remove the %n from the first printf. What do you notice?
+        //print lines are merged together (no new line)
+
 
         // >>>> Multiple Variables
 
@@ -52,12 +59,16 @@ public class ConsoleIoLecture{
         // (2) Print using printf() and placeholders
         // note: d : decimal integer [byte, short, int, long]
 
+        int three = 3;
+        String types = "types";
+        String typeOfPet = "cats";
 
+        System.out.printf("I have %d %s.%n", three, typeOfPet);
 
 
         //TODO:
         // (1) Print using printf(), multiple variables, and placeholders
-
+        System.out.printf("I have %d %s of %s.%n", three, types, typeOfPet);
 
 
         // >>>> Currency
@@ -72,32 +83,52 @@ public class ConsoleIoLecture{
 
 
 
+        int currencyPennies = 1000;
+        System.out.printf("I'll sell you land for $%.2f an acre!%n", currencyPennies/100.00);
+
+
+
+
+
         /* ***************************************
                         USER INPUT
         ****************************************/
         // The Scanner class allows us to get data input that the user enters into the console.
         // Scanner Docs ==> http://www.cs.utexas.edu/users/ndale/Scanner.html
 
+        //System.in refers to our console
+        Scanner userInput = new Scanner(System.in);
 
 
 
         // >>>> .next() method
         // .next() captures each input usually signified by whitespace. The input is returned as a string
 
-
+//        System.out.println("Please enter your first, middle and last name.");
+//        String first = userInput.next();
+//        String middle = userInput.next();
+//        String last = userInput.next();
+//
+//
+//        System.out.println(first);
+//        System.out.println(middle);
+//        System.out.println(last);
 
 
         // >>>> .nextInt() method
         // .nextInt() captures the first valid int value
 
-
-
+//        System.out.println("Please enter your age.");
+//        int age = userInput.nextInt();
+//        System.out.println(age);
 
 
         // >>>> .nextLine() method
         // .nextLine() Returns the rest of the current line
 
-
+//        System.out.println("Enter your favorite quote.");
+//        String quote = userInput.nextLine();
+//        System.out.println(quote);
 
 
 
