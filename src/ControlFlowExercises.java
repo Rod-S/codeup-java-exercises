@@ -6,7 +6,8 @@ public class ControlFlowExercises {
 
 //        int i = 5;
 //        while (i <= 15 ) {
-//            System.out.println(i);
+//            System.out.print(i);
+//            System.out.print(" ");
 //            i++;
 //        }
 //        int i = 100;
@@ -35,22 +36,24 @@ public class ControlFlowExercises {
 
         Scanner sc = new Scanner(System.in);
         sc.useDelimiter("\n");
-
-//        System.out.printf("What number would you like to go up to?\n");
-//        int userInt = sc.nextInt();
+//        boolean userContinue = true;
+//        do {
+//            System.out.printf("What number would you like to go up to?\n");
+//            int userInt = sc.nextInt();
+//            String leftAlignFormat = "%-8d | %-9d | %-4d %n";
+//            System.out.printf("Here is your table!%n");
+//            System.out.format("number   | squared   | cubed   %n");
+//            System.out.format("------   | -------   | -----   %n");
+//            for (int i = 1; i <= userInt; i++) {
+//                System.out.format(leftAlignFormat, i, i * i, i * i * i);
+//            }
 //
-//        System.out.printf("Here is your table!%n");
-//
-//        String leftAlignFormat = "%-8d | %-9d | %-4d %n";
-//
-//        System.out.format("number   | squared   | cubed   %n");
-//        System.out.format("------   | -------   | -----   %n");
-//        for (int i = 1; i <= userInt; i++) {
-//
-//            System.out.format(leftAlignFormat, i, i * i, i * i * i);
-//        }
-
-
+//            System.out.print("Would you like to continue (y/n)");
+//            String userResponse = sc.next();
+//            if (!userResponse.equalsIgnoreCase("y")) {
+//                 userContinue = false;
+//            }
+//        } while (userContinue);
 
 
         while (true) {
@@ -70,6 +73,8 @@ public class ControlFlowExercises {
             System.out.print("Continue? [Y/N]");
             String userContinue = sc.next();
             if (userContinue.equalsIgnoreCase("y")) {
+                continue;
+            } else {
                 break;
             }
         }
