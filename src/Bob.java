@@ -29,8 +29,6 @@ public class Bob {
                 String userContinueResponse = sc.nextLine();
                 if (userContinueResponse.equalsIgnoreCase("n")) {
                     break;
-                } else {
-                    continue;
                 }
             }
             while (userContinue);
