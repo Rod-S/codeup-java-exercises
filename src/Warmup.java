@@ -19,10 +19,10 @@ public class Warmup {
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to 'PRINT THE VEGETABLE COUNT' app!\n");
         System.out.print("How many vegetables do you have? ");
-        int count = sc.nextInt();
+
         sc.nextLine();
         System.out.print("What kind of vegetable? (use a singular noun, e.g. 'carrot' vs. 'carrots'): ");
         String veggie = sc.nextLine();
-        System.out.printf("You have %d %ss!\n\n", count, veggie);
+        System.out.printf("You have %d %ss!\n\n", veggie);
     }
 }
