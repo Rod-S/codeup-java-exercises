@@ -70,6 +70,21 @@ public class ConsoleGame {
         System.out.format("                     ------   |                              ' >_,-'       `-._<`                                 | ------   %n");
     }
 
+    public static void gameOver() {
+        System.out.format("                     ------   |          _;~)                  (~;_                       | ------   %n");
+        System.out.format("                     ------   |        (   |                  |   )                       | ------   %n");
+        System.out.format("                     ------   |          ~', ',    ,''~'',   ,' ,'~                            | ------   %n");
+        System.out.format("                     ------   |              ', ','       ',' ,'                           | ------   %n");
+        System.out.format("                     ------   |                ',: {'} {'} :,'                                       | ------   %n");
+//        System.out.format("                     ------   |                  ;   /^\   ;                                           | ------   %n");
+//        System.out.format("                     ------   |                   ~\  ~  /~                                          | ------   %n");
+        System.out.format("                     ------   |                 ,' ,~~~~~, ',                                                     | ------   %n");
+        System.out.format("                     ------   |               ,' ,' ;~~~; ', ',                                                   | ------   %n");
+        System.out.format("                     ------   |             ,' ,'    '''    ', ',                                                 | ------   %n");
+        System.out.format("                     ------   |           (~  ;               ;  ~)                                               | ------   %n");
+        System.out.format("                     ------   |            -;_)               (_;-                                                | ------   %n");
+    }
+
     public static void boss() {
         String leftAlignFormat = "%-20s %-8s | %-1s | %-8s %n";
         System.out.format("                     ------   |                               (\\               /)                                 | ------   %n");

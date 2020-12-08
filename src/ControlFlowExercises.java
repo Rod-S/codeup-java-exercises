@@ -36,48 +36,48 @@ public class ControlFlowExercises {
 
         Scanner sc = new Scanner(System.in);
         sc.useDelimiter("\n");
-//        boolean userContinue = true;
-//        do {
-//            System.out.printf("What number would you like to go up to?\n");
-//            int userInt = sc.nextInt();
-//            String leftAlignFormat = "%-8d | %-9d | %-4d %n";
-//            System.out.printf("Here is your table!%n");
-//            System.out.format("number   | squared   | cubed   %n");
-//            System.out.format("------   | -------   | -----   %n");
-//            for (int i = 1; i <= userInt; i++) {
-//                System.out.format(leftAlignFormat, i, i * i, i * i * i);
-//            }
-//
-//            System.out.print("Would you like to continue (y/n)");
-//            String userResponse = sc.next();
-//            if (!userResponse.equalsIgnoreCase("y")) {
-//                 userContinue = false;
-//            }
-//        } while (userContinue);
+        boolean userContinue = true;
+        do {
+            System.out.printf("What number would you like to go up to?\n");
+            int userInt = sc.nextInt();
+            String leftAlignFormat = "%-8d | %-9d | %-4d %n";
+            System.out.printf("Here is your table!%n");
+            System.out.format("number   | squared   | cubed   %n");
+            System.out.format("------   | -------   | -----   %n");
+            for (int i = 1; i <= userInt; i++) {
+                System.out.format(leftAlignFormat, i, i * i, i * i * i);
+            }
+
+            System.out.print("Would you like to continue (y/n)");
+            String userResponse = sc.next();
+            if (!userResponse.equalsIgnoreCase("y")) {
+                 userContinue = false;
+            }
+        } while (userContinue);
 
 
-        while (true) {
-            System.out.println("What is your numerical grade? (Enter an integer.)");
-            int caseSwitch = sc.nextInt();
-            if (caseSwitch <= 100 & caseSwitch >= 88) {
-                System.out.println("A");
-            } else if (caseSwitch <= 87 & caseSwitch >= 80) {
-                System.out.println("B");
-            } else if (caseSwitch <= 79 & caseSwitch >= 67) {
-                System.out.println("C");
-            } else if (caseSwitch <= 66 & caseSwitch >= 60) {
-                System.out.println("D");
-            } else {
-                System.out.println("F");
-            }
-            System.out.print("Continue? [Y/N]");
-            String userContinue = sc.next();
-            if (userContinue.equalsIgnoreCase("y")) {
-                continue;
-            } else {
-                break;
-            }
-        }
+//        while (true) {
+//            System.out.println("What is your numerical grade? (Enter an integer.)");
+//            int caseSwitch = sc.nextInt();
+//            if (caseSwitch <= 100 & caseSwitch >= 88) {
+//                System.out.println("A");
+//            } else if (caseSwitch <= 87 & caseSwitch >= 80) {
+//                System.out.println("B");
+//            } else if (caseSwitch <= 79 & caseSwitch >= 67) {
+//                System.out.println("C");
+//            } else if (caseSwitch <= 66 & caseSwitch >= 60) {
+//                System.out.println("D");
+//            } else {
+//                System.out.println("F");
+//            }
+//            System.out.print("Continue? [Y/N]");
+//            String userContinue = sc.next();
+//            if (userContinue.equalsIgnoreCase("y")) {
+//                continue;
+//            } else {
+//                break;
+//            }
+//        }
 
 
 
