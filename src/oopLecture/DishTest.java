@@ -25,6 +25,17 @@ public class DishTest {
         dish1.nameOfDish = "pizza";
         dish1.wouldRecommend = true;
         dish1.printSummary();
+        DishTools.shoutDishName(dish1);
+        DishTools.analyzeDishCost(dish1);
+        DishTools.flipRecommendation(dish1);
 
+        Dish dish2 = new Dish();
+        dish2.costInCents = 1000;
+        dish2.nameOfDish = "spaghetti";
+        dish2.wouldRecommend = false;
+        dish1.printSummary();
+        DishTools.shoutDishName(dish2);
+        DishTools.analyzeDishCost(dish2);
+        DishTools.flipRecommendation(dish2);
     }
 }

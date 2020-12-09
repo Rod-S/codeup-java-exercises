@@ -23,11 +23,6 @@ public class Dish {
                 "Name: " + nameOfDish + "\n" +
                 "Recommended: " + wouldRecommend + "\n");
     }
-//    public void printSummary(boolean convertCents) {
-//        System.out.printf(
-//                "Cost: " + costInCents + "\n" +
-//                "Name: " + nameOfDish + "\n" +
-//                "Recommended: " + wouldRecommend + "\n");
-//    }
+
 
 }
