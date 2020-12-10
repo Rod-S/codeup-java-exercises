@@ -22,8 +22,8 @@ public class InputTest {
 //        System.out.println(input2.yesNo());
 
 
-        //        Input input2 = new Input();
-//        System.out.println(input2.yesNo("Type in yes or y for true otherwise will return false"));
+                Input input2 = new Input();
+        System.out.println(input2.yesNo("Type in yes or y for true otherwise will return false"));
 
 //        Input input3= new Input();
 //        input3.getInt(1,100);

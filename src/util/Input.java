@@ -7,11 +7,11 @@ public class Input {
     private Scanner sc = new Scanner(System.in);
 
     public String getString() {
-        return sc.next();
+        return sc.nextLine();
     }
 
     public String getString(String prompt) {
-        return sc.next();
+        return sc.nextLine();
     }
 
     public int getInt() {
@@ -52,7 +52,6 @@ public class Input {
         }
     }
 
-
     public int getInt(int min, int max) {
 //        System.out.printf("Enter a number between %d and %d", min, max);
         int userInput = getInt();
@@ -67,14 +66,7 @@ public class Input {
 
     public int getInt(int min, int max, String prompt) {
         System.out.printf("%s %d and %d", prompt, min, max);
-        int userInput = getInt();
-        if (userInput < min | userInput > max) {
-            System.out.println("Number is not in range. Try again.");
-            getInt(min, max);
-        } else {
-            System.out.printf("%d is within %d and %d!", userInput, min, max);
-        }
-        return userInput;
+        return getInt(min, max);
     }
 //
 
