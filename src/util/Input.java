@@ -19,6 +19,7 @@ public class Input {
     }
 
     public int getInt(String prompt) {
+        System.out.println(prompt);
         return sc.nextInt();
     }
 
@@ -27,6 +28,7 @@ public class Input {
     }
 
     public double getDouble(String prompt) {
+        System.out.println(prompt);
         return sc.nextDouble();
     }
 
