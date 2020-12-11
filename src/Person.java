@@ -7,6 +7,7 @@ public class Person {
     }
 
     public void Student(String name) {
+
         this.name = name;
     }
 
