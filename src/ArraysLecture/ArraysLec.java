@@ -1,5 +1,7 @@
 package ArraysLecture;
 
+import java.util.Arrays;
+
 public class ArraysLec {
 
     public static void main(String[] args) {
@@ -124,12 +126,13 @@ public class ArraysLec {
 
         // Example1:  Array.fill()
 
+        //initialize array of strings with array length of 4
         String[] testArray = new String[4];
-//
-//        Arrays.fill(testArray, "dogs");
-//        for (String element : testArray) {
-//            System.out.println(element);
-//        }
+        //replace the default values of testArray with "dogs" for each element iteration
+        Arrays.fill(testArray, "dogs");
+        for (String element : testArray) {
+            System.out.println(element);
+        }
 
 
 
@@ -139,12 +142,12 @@ public class ArraysLec {
 
 
         // ***Example1: BONUS ***
-//        int[] numArray = {1,1,1,1,1,1,1,1,1,1};
+        int[] numArray = {1,1,1,1,1,1,1,1,1,1};
 //
-//        Arrays.fill(numArray, 0, 4, 5);
-//        for (int element : numArray) {
-//            System.out.println(element);
-//        }
+        Arrays.fill(numArray, 0, 4, 5);
+        for (int element : numArray) {
+            System.out.println(element);
+        }
 
 
 
@@ -157,9 +160,10 @@ public class ArraysLec {
         // Example 2: Arrays.equals(array1, array2)
         // Returns true if two array elements are equal and in the same order
 
-//        String[] words = {"Mushroom", "Mushroom"};
-//        String[] words2 = {"Mushroom", "mushroom"};
-//        System.out.println(Arrays.equals(words, words2));
+
+        String[] words = {"Mushroom", "Mushroom"};
+        String[] words2 = {"Mushroom", "mushroom"};
+        System.out.println(Arrays.equals(words, words2));
 
 
 
@@ -172,10 +176,10 @@ public class ArraysLec {
         // Example 3: Arrays.copyOf()
         // Returns a copy array of a given array of a given length
 
-//        String[] badgerArray = new String[4];
-//        Arrays.fill(badgerArray, "Badgers");
+        String[] badgerArray = new String[4];
+        Arrays.fill(badgerArray, "Badgers");
 //
-//        String[] twoBadgers = Arrays.copyOf(badgerArray, 2);
+        String[] twoBadgers = Arrays.copyOf(badgerArray, 2);
 //        System.out.println(Arrays.toString(twoBadgers));
 
 
