@@ -8,33 +8,23 @@ public class Rectangle extends Quadrilateral implements Measurable {
     }
 
     @Override
-    public int getLength() {
-        return super.getLength();
-    }
-
-    @Override
-    public int getWidth() {
-        return super.getWidth();
-    }
-
-    @Override
     public void setLength(int length) {
-
+        super.length = length;
     }
 
     @Override
     public void setWidth(int width) {
-
+        super.width = width;
     }
 
     @Override
     public double getPerimeter() {
-        return 2 * length + 2 * width;
+        return 2 * getLength() + 2 * getWidth();
     }
 
     @Override
     public double getArea() {
-        return length * width;
+        return getLength() * getWidth();
     }
 
 //    protected int length;
