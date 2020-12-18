@@ -20,7 +20,7 @@ public class CollectionsLecture {
         answers.put('D', "Jimbo");
         answers.put('E', "Jim");
 
-        System.out.println(answers.get('C'));
+        System.out.println(answers.get('C')); 
 
         System.out.println(answers.keySet());
         Set<Character> keys = answers.keySet();
