@@ -2,7 +2,7 @@ package util;
 
 public class InputTest {
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception {
 //        Input input1 = new Input();
 //        System.out.println(input1.getString());
 
@@ -23,7 +23,7 @@ public class InputTest {
 
 
                 Input input2 = new Input();
-        System.out.println(input2.yesNo("Type in yes or y for true otherwise will return false"));
+        System.out.println(input2.getBinary());
 
 //        Input input3= new Input();
 //        input3.getInt(1,100);

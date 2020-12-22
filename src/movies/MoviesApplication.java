@@ -7,7 +7,7 @@ import util.Input;
 
 public class MoviesApplication {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Movie[] allMovies = MoviesArray.findAll();
         Input userInput = new Input();
         boolean userLoop = true;
