@@ -1,7 +1,8 @@
 package grades;
 
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Student {
     private String name;
@@ -39,13 +40,43 @@ public class Student {
         return  totalSize / grades.size();
     }
 
+    public void recordAttendance(String date, String value) {
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+        String currentDate = formatter.format(date);
+        if (value.equalsIgnoreCase("A")) {
+            attendance.put(currentDate, "A");
+        } else if (value.equalsIgnoreCase("P")){
+            attendance.put(currentDate, "P");
+        } else {
+            System.out.println("invalid entry. Try again.");
+        }
+
+    }
+
+    public float attendancePercentage(HashMap<String, String> attendance){
+        final float[] totalAbsence = {0};
+        attendance.forEach((k,v) -> {
+            if (v.equalsIgnoreCase("P")) {
+                totalAbsence[0] += 1;
+            }
+        });
+        return ((attendance.size() - totalAbsence[0]) / attendance.size());
+    }
+
+    public HashMap<String, String> getAttendance() {
+        return attendance;
+    }
+
+    public void setAttendance(HashMap<String, String> attendance) {
+        this.attendance = attendance;
+
+    }
 
     public static void main(String[] args) {
-        Student rod = new Student("Rod");
-        rod.addGrade(90.0);
-        rod.addGrade(100.0);
-        rod.addGrade(85.0);
-
-        System.out.println(rod.getGradeAverage());
+//        Student rod = new Student("Rod");
+//        rod.addGrade(90.0);
+//        rod.addGrade(100.0);
+//        rod.addGrade(85.0);
+//        System.out.println(rod.getGradeAverage());
     }
 }

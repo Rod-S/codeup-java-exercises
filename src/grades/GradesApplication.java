@@ -76,7 +76,7 @@ public class GradesApplication {
                             System.out.println("Student's grades: " + Arrays.toString(students.get(studentSelection).getGrades()));
                             System.out.println("Current Average: " + students.get(studentSelection).getGradeAverage());
                         }
-                        System.out.println("\nWhat student would you like to see more information on? 'y'/'n' ");
+                        System.out.println("\nWould you like to see another student? 'y'/'n' ");
                         String userContinueInput = sc.next();
                         continueStudentSelect = userContinueInput.equalsIgnoreCase("y");
                     } while (continueStudentSelect);
